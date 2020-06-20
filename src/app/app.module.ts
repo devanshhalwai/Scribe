@@ -11,6 +11,11 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import { LoginComponent } from './login/login.component';
 import { firebaseConfig } from './firebaseConfig.js';
+import { CapitalizePipe } from './capitalize.pipe';
+import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
+import { MyblogsComponent } from './myblogs/myblogs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 firebase.initializeApp(firebaseConfig);
@@ -21,7 +26,12 @@ firebase.initializeApp(firebaseConfig);
     ListformComponent,
     InterpolationComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    CapitalizePipe,
+    HomeComponent,
+    MenuComponent,
+    MyblogsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
